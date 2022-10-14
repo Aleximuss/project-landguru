@@ -1,21 +1,15 @@
-$('.job-items > div').on('click', function() {
-    $(this).children('.job_items_right').toggleClass('about-rotate-icon');
-    $(this).parent('.job-items').toggleClass('change-color');
-    $(this).next('.about-text').slideToggle(200);
-})
-
-$('.customers_items > div').on('click', function() {
-    $(this).parent('.customers_items').toggleClass('change-item-color');
-    $(this).children('.custom_icon').toggleClass('custom-icon-change');
-    $(this).next('.custom_text').slideToggle(200);
-})
-
-$('#about-link').on('click', function (e) {
+$('#play_video').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#about').offset().top}, 500)
 })
 
-$('#feedback-link').on('click', function (e) {
+$('#open-modal').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({scrollTop: $('#feedback').offset().top}, 500)
+})
+
+$('.question_item > div').on('click', function() {
+    $(this).parent('.question_item').toggleClass('change-item-color');
+    $(this).next('.question_text').slideToggle(200);
+    $(this).children('.question_item_wrapper').children('.item-2').toggleClass('item-2-off');
 })

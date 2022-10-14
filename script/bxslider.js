@@ -1,11 +1,4 @@
-$('.carusel').bxSlider({
-    mode: 'horizontal',
-    controls: false,
-    slideMargin: 100,
-    touchEnabled: true
-})
-
-const slider = $(".comments-items-wrapper").bxSlider({
+const slider = $(".carusel").bxSlider({
     pager: false,
     controls: false,
     infiniteLoop: true,
