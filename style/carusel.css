@@ -4,18 +4,10 @@
     box-shadow: none;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 13px;
-    background: rgb(43, 41, 45, 0.2);
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus,
-.bx-wrapper .bx-pager.bx-default-pager a:hover {
-    background: #1E3C72;
+@media screen and (max-width: 1440px) {
+.bx-wrapper {
+    margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 1090px) {
@@ -24,7 +16,7 @@
     }
 
     .bx-pager {
-        padding-bottom: 51px;
+            padding-bottom: 51px;
     }
 }
 
@@ -32,13 +24,13 @@
     .bx-wrapper {
         margin-bottom: 40px;
     }
-    
+
     .bx-viewport {
         text-align: left;
         margin-bottom: 40px;
     }
 
     .bx-pager {
-        padding-bottom: 40px;
+         padding-bottom: 40px;
     }
 }
