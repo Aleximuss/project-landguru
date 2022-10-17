@@ -16,7 +16,19 @@
     }
 
     .bx-pager {
-            padding-bottom: 51px;
+        padding-bottom: 51px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bx-wrapper {
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .bx-wrapper {
+        margin-bottom: -20px;
     }
 }
 
