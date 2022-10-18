@@ -19,11 +19,13 @@ $('.modal-video').on('click', function(e) {
 });
 
 $('.close').on('click', function() {
+    $('.video').prop('muted', true);
     $(this).parents('.modal-video').fadeOut()
 })
 
 $('#play_video').on('click', function() {
     $('.modal-video').fadeIn()
 })
+
 
 
