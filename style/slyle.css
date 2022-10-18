@@ -22,10 +22,11 @@ body {
 .header_pattern_item-1 {
     display: block;
     top: -6px;
-    left: -10px;    
+    left: -10px;
     position: absolute;
     overflow: hidden;
 }
+
 .header_pattern_item-2 {
     display: block;
     top: 467px;
@@ -33,6 +34,7 @@ body {
     position: absolute;
     /* overflow: hidden; */
 }
+
 .header_pattern_item-3 {
     display: block;
     top: 1px;
@@ -40,6 +42,7 @@ body {
     position: absolute;
     /* overflow: hidden; */
 }
+
 .header_pattern_item-4 {
     display: block;
     top: 215px;
@@ -47,6 +50,7 @@ body {
     position: absolute;
     /* overflow: hidden; */
 }
+
 .header_pattern_item-5 {
     display: block;
     top: 1px;
@@ -55,6 +59,7 @@ body {
     /* overflow: hidden; */
     width: 381px;
 }
+
 .header_pattern_item-6 {
     display: block;
     top: 224px;
@@ -931,7 +936,7 @@ body {
     background: #fff;
     padding: 50px 30px 30px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -940,13 +945,14 @@ body {
 
 .close {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     font-size: 14px;
     color: #000000;
     cursor: pointer;
     background: rgb(226, 218, 218);
     border-radius: 5px;
+    z-index: 5;
 }
 
 .modal-form {
@@ -956,8 +962,8 @@ body {
 }
 
 .modal-form-title {
+    font-weight: bold;
     font-size: 24px;
-    line-height: 24px;
     color: #000000;
     margin: 30px auto 40px;
 }
@@ -980,7 +986,7 @@ body {
     height: 40px;
     background: #FFFFFF;
     border: 1px solid #005BBB;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 4px 12px;
 }
 
@@ -994,16 +1000,15 @@ input::placeholder {
 }
 
 .modal-video {
-    max-width: 1550px;
     background: rgb(146, 199, 170);
-    padding: 50px 30px 30px;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 4;
+    z-index: 3;
     display: none;
 }
 
@@ -1397,7 +1402,7 @@ input::placeholder {
     }
 
     .header_pattern_item-3 {
-        display: none;        
+        display: none;
     }
 
     .menu-all {
@@ -1691,7 +1696,7 @@ input::placeholder {
     }
 
     .footer_item {
-        width: 180px;
+        max-width: 180px;
         margin: 58px 0 auto;
     }
 
@@ -1968,7 +1973,26 @@ input::placeholder {
 
     .footer_item_title {
         line-height: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    .modal {
+        max-width: 450px;
+        padding: 50px 30px 30px;
+    }
+
+    .modal-form-title {
+        font-size: 24px;
+        margin: 15px auto 25px;
+    }
+
+    .modal-field-input {
+        width: 270px;
+        height: 30px;
+    }
+
+    .modal-form-button {
+        margin-top: 20px;
     }
 }
 
@@ -1987,7 +2011,7 @@ input::placeholder {
 
     .menu {
         top: 24px;
-        right: 36px;
+        right: 45px;
     }
 
     .about {
@@ -2219,6 +2243,23 @@ input::placeholder {
         margin-bottom: 15px;
     }
 
+    .close {
+        right: 5px;
+        top: 5px;
+    }
+
+    .modal-video {
+        width: 500px;
+        height: 312px;
+    }
+
+    .video {
+        position: absolute;
+        top: -12px;
+        left: 10px;
+        width: 480px;
+    }
+
     #up {
         width: 40px;
         height: 40px;
@@ -2386,9 +2427,15 @@ input::placeholder {
         max-width: 310px;
     }
 
-    .footer_item_title {
-        line-height: 18px;
-        margin-bottom: 15px;
+    .modal-video {
+        width: 450px;
+        height: 265px;
+    }
+
+    .video {
+        top: -23px;
+        left: 10px;
+        width: 430px;
     }
 }
 
@@ -2407,7 +2454,7 @@ input::placeholder {
 
     .menu {
         top: 24px;
-        right: 75px;
+        right: 42px;
     }
 
     .about {
@@ -2415,14 +2462,22 @@ input::placeholder {
     }
 
     .about_title {
-        font-size: 44px;
-        line-height: 48px;
+        font-size: 40px;
+        line-height: 44px;
     }
 
     .about_text {
         font-size: 16px;
         line-height: 28px;
         margin: 0 auto 38px;
+    }
+
+    .play_video_pic {
+        margin-right: 5px;
+    }
+
+    .watch_video {
+        font-size: 14px;
     }
 
     .sponsor_img {
@@ -2546,11 +2601,18 @@ input::placeholder {
     }
 
     .footer {
+        grid-template-columns: repeat(1, 1fr);
         max-width: 290px;
     }
+}
 
-    .footer_item_title {
-        line-height: 18px;
-        margin-bottom: 15px;
+@media screen and (max-width: 320px) {
+    .header {
+        border-radius: 0px 0px 40px 0px;
+    }
+
+    .menu {
+        top: 24px;
+        right: 28px;
     }
 }
