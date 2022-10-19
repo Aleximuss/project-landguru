@@ -174,9 +174,8 @@ body {
     margin-right: 20px;
 }
 
-.play_video_pic {
+/* .play_video_pic {
     margin-right: 5px;
-    transition: 300ms all;
     animation-name: videoButton;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -192,10 +191,93 @@ body {
     100% {
         transform: scale(120%);
     }
+} */
+
+.play_video_pic {
+    margin-right: 5px;
+    animation-name: tremor;
+    animation-duration: 3s;
+    animation-iteration-count: 1000;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+}
+
+@keyframes tremor {
+    0% {
+        transform: translate(6px, 0);
+    }
+
+    6% {
+        transform: translate(-6px, 0);
+    }
+
+    12% {
+        transform: translate(5px, 0);
+    }
+
+    18% {
+        transform: translate(-5px, 0);
+    }
+
+    24% {
+        transform: translate(4px, 0);
+    }
+
+    30% {
+        transform: translate(-4px, 0);
+    }
+
+    36% {
+        transform: translate(3px, 0);
+    }
+
+    42% {
+        transform: translate(-3px, 0);
+    }
+
+    48% {
+        transform: translate(2px, 0);
+    }
+
+    54% {
+        transform: translate(-2px, 0);
+    }
+
+    60% {
+        transform: translate(1px, 0);
+    }
+
+    66% {
+        transform: translate(0, 0);
+    }
+
+    72% {
+        transform: translate(0, 0);
+    }
+
+    78% {
+        transform: translate(0, 0);
+    }
+
+    84% {
+        transform: translate(0, 0);
+    }
+
+    90% {
+        transform: translate(0, 0);
+    }
+
+    96% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .play_video_pic [d] {
-    transition: 300ms all;
     animation-name: changeColor;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -217,7 +299,7 @@ body {
     }
 
     75% {
-        fill: #19aeb3
+        fill: #197bb3
     }
 
     100% {
@@ -228,18 +310,6 @@ body {
 .play_video_pic:hover {
     cursor: pointer;
     transform: scale(120%);
-}
-
-.watch_video {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.16px;
-    color: #FFFFFF;
-    
-}
-
-.watch_video:hover {
-    cursor: pointer;
 }
 
 .sponsor_img {
@@ -1553,6 +1623,7 @@ input::placeholder {
     }
 
     .header_checkbox:checked~.check-wrapper>.check:nth-of-type(2) {
+        transform: translateX(50%);
         opacity: 0;
     }
 
@@ -1740,7 +1811,7 @@ input::placeholder {
     }
 
     .secure_payment_img img {
-        width: 100%;        
+        width: 100%;
     }
 
     @keyframes phoneScale {
@@ -2010,7 +2081,7 @@ input::placeholder {
     .functions-2_pattern_item-2 {
         display: none;
     }
-    
+
     .functions-2_container {
         max-width: 500px;
         padding: 35px 0 30px;
@@ -2475,7 +2546,7 @@ input::placeholder {
         font-size: 16px;
         line-height: 24px;
         margin: 0 0 10px 22px;
-    }    
+    }
 
     .core_features_item_text {
         font-size: 14px;
@@ -2596,7 +2667,7 @@ input::placeholder {
     .header_pattern_item-6 {
         display: none;
     }
-    
+
     .container {
         max-width: 290px;
     }
