@@ -299,7 +299,7 @@ body {
     }
 
     75% {
-        fill: #197bb3
+        fill: #19b33a
     }
 
     100% {
@@ -2638,6 +2638,19 @@ input::placeholder {
         max-width: 310px;
     }
 
+    .modal {
+        padding: 30px 25px 30px;
+    }
+
+    .modal-field-input {
+        width: 250px;
+        height: 26px;
+    }
+
+    .modal-form-button {
+        margin-top: 20px;
+    }
+
     .modal-video {
         width: 450px;
         height: 300px;
@@ -2839,6 +2852,20 @@ input::placeholder {
         max-width: 290px;
     }
 
+    .modal-field-name {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .modal-field-input {
+        width: 230px;
+        height: 24px;
+    }
+
+    .modal-form-button {
+        margin-top: 15px;
+    }
+
     .modal-video {
         width: 340px;
         height: 270px;
@@ -2867,6 +2894,10 @@ input::placeholder {
     .menu {
         top: 24px;
         right: 28px;
+    }    
+
+    .modal-field-input {
+        width: 220px;
     }
 
     .modal-video {
