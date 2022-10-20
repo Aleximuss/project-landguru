@@ -37,14 +37,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 381px;
 }
 
 .header_pattern_item-6 {
     position: absolute;
     top: 224px;
     right: 0;
-    width: 381px;
 }
 
 .pattern_dots_img {
@@ -85,6 +83,7 @@ body {
 
 .header_ul {
     margin-right: 225px;
+    z-index: 1;
 }
 
 .header_li {
@@ -102,6 +101,7 @@ body {
 .header_link:hover {
     font-weight: bold;
     cursor: pointer;
+    color: #53afb6;
 }
 
 .button {
@@ -123,6 +123,8 @@ body {
 .button:hover {
     cursor: pointer;
     transform: scale(115%);
+    border: 1.5px solid #53afb6;
+    box-shadow: 3px 3px 7px #53afb6;
 }
 
 .header_checkbox,
@@ -377,11 +379,14 @@ body {
 .feature_item {
     max-width: 265px;
     padding: 10px;
+    transition: 250ms all;
 }
 
 .feature_item:hover {
-    background: #FFFFFF;
-    box-shadow: 2px 6px 27px rgba(38, 78, 118, 0.1);
+    background: #d4e0d6;
+    border-radius: 5px;
+    box-shadow: 2px 6px 10px rgba(18, 99, 180, 0.5);
+    cursor: grab;
 }
 
 .quality_features_icon {
@@ -438,12 +443,14 @@ body {
     padding: 10px;
     margin-bottom: 40px;
     max-width: 452px;
+    transition: 250ms all;
 }
 
 .core_features_item:hover {
+    background: #d4e0d6;
+    border-radius: 5px;
+    box-shadow: 2px 6px 10px rgba(18, 99, 180, 0.5);
     cursor: grab;
-    background: #FFFFFF;
-    box-shadow: 2px 6px 27px rgba(38, 78, 118, 0.1);
 }
 
 .core_features_item_title {
@@ -480,11 +487,15 @@ body {
 .grid_item {
     align-items: start;
     max-width: 370px;
+    transition: 250ms all;
 }
 
 .grid_item:hover {
-    background: #FFFFFF;
-    box-shadow: 2px 6px 27px rgba(38, 78, 118, 0.1);
+    background: #d4e0d6;
+    border-radius: 5px;
+    box-shadow: 2px 6px 10px rgba(18, 99, 180, 0.5);
+    padding: 0 5px;
+    cursor: grab;
 }
 
 .quality_features-2_icon {
@@ -639,10 +650,11 @@ body {
 }
 
 .functions-1_item:hover {
-    background: #8a8fd4;
-    box-shadow: 2px 4px 15px rgba(106, 150, 184, 0.5);
+    background: #a4cfb8;
+    box-shadow: 4px 5px 8px rgba(83, 175, 182, .7);
     border-radius: 2px;
-    padding: 5px;
+    padding: 0 5px;
+    cursor: grab;
 }
 
 .functions-1_item:hover .functions-1_item_title {
@@ -673,12 +685,15 @@ body {
     padding: 40px;
     margin-right: 38px;
     text-align: left;
+    transition: 250ms all;
 }
 
 .carusel__item:hover {
+    background: #dbccda;
+    border-radius: 2px;
+    padding: 20px;
     cursor: grab;
-    background: #FFFFFF;
-    box-shadow: 2px 6px 27px rgba(38, 78, 118, 0.1);
+    box-shadow: 2px 6px 10px rgba(38, 78, 118, 0.5);
 }
 
 .carusel__item:active {
@@ -751,6 +766,9 @@ body {
     cursor: pointer;
     font-size: 35px;
     color: #0F2137;
+    border-radius: 3px;
+    box-shadow: 2px 6px 10px rgba(38, 78, 118, 0.5);
+    padding: 0 10px;
 }
 
 .core_features-3_container {
@@ -932,6 +950,7 @@ body {
 .pricing_card:hover {
     background: #ffffff;
     box-shadow: 2px 6px 7px rgba(179, 194, 209, 0.8);
+    cursor: grab;
 }
 
 .pricing_card:hover .card_title {
@@ -1193,7 +1212,7 @@ input::placeholder {
     align-items: center;
     color: #fff;
     cursor: pointer;
-    z-index: 99;
+    z-index: 7;
 }
 
 #up span {
